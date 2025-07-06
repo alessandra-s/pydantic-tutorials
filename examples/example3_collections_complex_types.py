@@ -3,7 +3,7 @@ from typing import Union, List, Dict
 from datetime import datetime
 import json
 
-#using multiple objects from typing library to show how Pydanitc can handle dynamic validation
+# multiple objects from typing library to show how Pydanitc can handle dynamic validation
 class MyThirdModel(BaseModel):
     name: Dict[str,str]
     skills: List[str]
@@ -16,7 +16,7 @@ print("Testing Pydantic Dynamic Type Handling & Validation")
 
 # Test # 1: Valid data
 
-print("=== Example 3: Multi-type Model (Valid Data) ===")
+print("=== Test 1: Multi-type Model (Valid Data) ===")
 try:
     valid_data = MyThirdModel(
         name={"first": "Collapsing", "last": "Willpower"},
@@ -33,7 +33,7 @@ except Exception as e:
 
 # Test 2: Dict Validaiton - wrong value type
 
-print("=== Test 1: Dict Validaiton - wrong value type) ===")
+print("=== Test 2: Dict Validaiton - wrong value type) ===")
 try: 
     invalid_dict = MyThirdModel(
         name= {"first": "Ava", "last": 524}, #last should be str, not int
@@ -49,7 +49,7 @@ except Exception as e:
 
 # Test 3: Dict validation - Wrong key type
 
-print("=== Test 2:Dict Validaiton - wrong key type) ===")
+print("=== Test 3:Dict Validaiton - wrong key type) ===")
 try:
     invalid_key = MyThirdModel(
         name={1: "John", "last": "Doe"},  # key should be str, not int
