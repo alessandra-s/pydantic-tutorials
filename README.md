@@ -58,11 +58,13 @@ python union_explanation.py
 - Start with assumptions and test them
 - Document misconceptions and corrections
 - Connect new concepts to existing knowledge
+- Identify similarities and differences
 
 ### 3. Cross-Domain Connections
 - Relate Python concepts to set theory, SQL, etc.
 - Identify similarities and differences
 - Use analogies carefully
+- Document misconceptions, corrections within self-learning and key insights
 
 ## Key Insights Documented
 
