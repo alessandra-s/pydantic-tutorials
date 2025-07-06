@@ -10,7 +10,7 @@ I'm not just working through tutorials - I'm testing theories, connecting to pas
 
 ## Entry 1: The Union Confusion
 
-### Date: [Current Date]
+### Date: [07.06.25]
 ### Challenge: Understanding Python Typing vs. Set Theory/SQL Unions
 
 **Initial Misconception:**
@@ -42,7 +42,7 @@ Coming from set theory and SQL background, I thought `Union[str, None]` might:
 
 ## Entry 3: Collections and Complex Types
 
-### Date: [Current Date]
+### Date: [07.06.25]
 ### Challenge: Understanding Pydantic's advanced validation capabilities
 
 **Testing Process:**
