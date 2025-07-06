@@ -10,15 +10,17 @@ I'm not just working through tutorials - I'm testing theories, connecting to pas
 
 ```
 Pydantic Tutorials/
-├── tutorial.md              # Main tutorial guide
-├── examples/                # All runnable code examples
-│   ├── example1_basic.py
-│   └── union_explanation.py
-├── learning_journal/        # Deep learning reflections
-│   ├── learning_journal.md  # Main learning journal
-│   └── union_typing_reflection.md
-├── requirements.txt         # Dependencies
-└── README.md               # This file
+├── tutorial.md # Main tutorial guide
+├── examples/ # All runnable code examples
+│ ├── example1_basic.py
+│ ├── example2_optional_parameters.py
+│ ├── example2_union_explanation.py
+│ └── example3_collections_complex_types.py
+├── learning_journal/ # Deep learning reflections
+│ └── learning_journal.md
+├── requirements.txt # Dependencies
+├── README.md # This file
+└── .gitignore # Git ignore rules
 ```
 
 ## Getting Started
@@ -39,44 +41,42 @@ Pydantic Tutorials/
    pip install -r requirements.txt
    ```
 
-### Running Examples
-Navigate to the examples directory and run any example:
-```bash
-cd examples
-python example1_basic.py
-python union_explanation.py
-```
 
-## Learning Approach
+## Examples
 
-### 1. Systematic Tutorial Progress
-- Follow `tutorial.md` as the main guide
-- Create examples for each concept
-- Test understanding with hands-on code
+### Example 1: Basic Model
+- Shows simple Pydantic model validation for required string fields.
 
-### 2. Deep Learning Through Testing
-- Start with assumptions and test them
-- Document misconceptions and corrections
-- Connect new concepts to existing knowledge
-- Identify similarities and differences
+### Example 2: Optional Parameters & Union Types
+- `example2_optional_parameters.py`: Demonstrates how to use `Optional` and `Union` for fields that may be omitted or set to `None`.
+- `example2_union_explanation.py`: Explores how `Union` works in Pydantic and clarifies common misconceptions.
 
-### 3. Cross-Domain Connections
-- Relate Python concepts to set theory, SQL, etc.
-- Identify similarities and differences
-- Use analogies carefully
-- Document misconceptions, corrections within self-learning and key insights
+### Example 3: Collections & Complex Types
+- `example3_collections_complex_types.py`: Demonstrates validation for nested types, lists, dictionaries, unions, and serialization/deserialization.
 
-## Key Insights Documented
+## Learning Journal
+See `learning_journal/learning_journal.md` for a detailed record of challenges, insights, and connections to prior knowledge.
 
-### Union Type Confusion
-- **Misconception**: Union combines values like set theory
-- **Reality**: Union specifies allowed types for a field
-- **Key Insight**: `Union[str, None]` means "accept string OR None"
+## Getting Started
 
-See `learning_journal/union_typing_reflection.md` for detailed analysis.
+1. Clone the repository
+2. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run examples:
+   ```bash
+   cd examples
+   python example1_basic.py
+   python example2_optional_parameters.py
+   python example2_union_explanation.py
+   python example3_collections_complex_types.py
+   ```
 
 ## Contributing
 This is a personal learning project, but suggestions and corrections are welcome!
-
-## License
-MIT License - feel free to use this for your own learning journey. 
